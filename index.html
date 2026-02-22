@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gfxdev(dot)org — Hardware-Access Graphics</title>
+  <meta name="description" content="gfxdev(dot)org — hardware-access computer graphics with low-stack enablement. Real-time graphics research, in-house game engine licensing, and external development." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <span class="pl-g">gfx</span><span class="pl-d">dev</span><span class="pl-dot">.</span>
+      </div>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill" id="preloaderBar"></div>
+      </div>
+      <p class="preloader-pct" id="preloaderPct">0</p>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <canvas id="bgCanvas"></canvas>
+
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">gfx<span>dev</span>.</a>
+    <div class="nav-index" id="navIndex">
+      <span class="nav-index-current" id="navCurrent">01</span>
+      <span class="nav-index-sep">/</span>
+      <span class="nav-index-total">06</span>
+    </div>
+    <button class="nav-menu-btn" id="navMenuBtn" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="menu-overlay" id="menuOverlay">
+    <div class="menu-inner">
+      <ul class="menu-links">
+        <li><a href="#hero" data-index="01">Home</a></li>
+        <li><a href="#services" data-index="02">Services</a></li>
+        <li><a href="#platforms" data-index="03">Platforms</a></li>
+        <li><a href="#experience" data-index="04">Experience</a></li>
+        <li><a href="#about" data-index="05">About</a></li>
+        <li><a href="#contact" data-index="06">Contact</a></li>
+      </ul>
+      <div class="menu-footer">
+        <a href="mailto:info@gfxdev.org">info@gfxdev(dot)org</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <section class="intro" id="introSection">
+    <canvas id="introCanvas"></canvas>
+    <div class="intro-overlay">
+      <div class="intro-scroll-prompt" id="introScrollPrompt">
+        <span>Scroll to explore</span>
+        <div class="intro-scroll-arrow">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro-band" id="introBand">
+    <div class="intro-band-inner">
+      <div class="intro-band-left">
+        <h1 class="intro-label intro-title" data-order="1">HARDWARE</h1>
+        <h1 class="intro-label intro-title" data-order="2">ACCESS</h1>
+        <h1 class="intro-label intro-title" data-order="3">GRAPHICS</h1>
+      </div>
+      <div class="intro-band-right">
+        <p class="intro-label intro-meta" data-order="4">FOUNDED IN 2026</p>
+        <p class="intro-label intro-desc" data-order="5">WE BLEND LOW-STACK ENGINEERING &amp; REAL-TIME<br>GRAPHICS AS AN IN-HOUSE TEAM OF PASSIONATE MAKERS</p>
+        <p class="intro-label intro-desc" data-order="6">OUR HARDWARE-CLOSE TOOLSET<br>CONSISTENTLY DELIVERS HIGH-PERFORMANCE<br>WORK THROUGH QUALITY &amp; OPTIMIZATION</p>
+      </div>
+    </div>
+  </section>
+
+  <main id="smoothWrapper">
+
+    <section class="section section--hero" id="hero" data-index="01">
+      <div class="section-inner">
+        <p class="hero-label reveal-text" data-delay="0.6">
+          <span class="reveal-line"><span>Hardware-Access Graphics</span></span>
+        </p>
+        <h1 class="hero-title">
+          <span class="reveal-line" data-delay="0.2"><span>Closer to the</span></span>
+          <span class="reveal-line" data-delay="0.35"><span class="accent">metal</span><span>,</span></span>
+          <span class="reveal-line" data-delay="0.5"><span>closer to the pixel.</span></span>
+        </h1>
+        <p class="hero-sub reveal-text" data-delay="0.8">
+          <span class="reveal-line"><span>Low-stack enablement — from embedded hardware</span></span>
+          <span class="reveal-line"><span>through server &amp; desktop to gaming consoles.</span></span>
+        </p>
+        <div class="hero-cta reveal-fade" data-delay="1.1">
+          <a href="#services" class="btn-circle">
+            <span>Explore</span>
+            <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-hint" id="scrollHint">
+        <span>Scroll</span>
+        <div class="scroll-hint-line"></div>
+      </div>
+    </section>
+
+    <section class="section section--services" id="services" data-index="02">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-num">02</span>
+          <h2 class="section-title">
+            <span class="reveal-line"><span>What We Do</span></span>
+          </h2>
+          <p class="section-sub reveal-text">
+            <span class="reveal-line"><span>Three pillars of expertise, one mission —</span></span>
+            <span class="reveal-line"><span>hardware-close, low-stack graphics that ship.</span></span>
+          </p>
+        </div>
+        <div class="services-row">
+          <article class="svc" data-parallax="0.08">
+            <span class="svc-index">01</span>
+            <h3 class="svc-title">Real-Time Graphics Research</h3>
+            <p class="svc-desc">GPU-driven pipelines, low-level APIs, physically-based shading, and global illumination — cutting-edge R&amp;D turned into production-ready, low-stack solutions.</p>
+            <div class="svc-tags"><span>Rendering R&amp;D</span><span>Low-Level APIs</span><span>GPU Compute</span><span>Hardware Access</span></div>
+          </article>
+          <article class="svc" data-parallax="0.12">
+            <span class="svc-index">02</span>
+            <h3 class="svc-title">In-House Engine Licensing</h3>
+            <p class="svc-desc">A proprietary engine built on a low-stack architecture that talks directly to the hardware. Minimal abstraction, maximum performance, full source access.</p>
+            <div class="svc-tags"><span>Engine Licensing</span><span>Low-Stack</span><span>Cross-Platform</span><span>Source Access</span></div>
+          </article>
+          <article class="svc" data-parallax="0.16">
+            <span class="svc-index">03</span>
+            <h3 class="svc-title">External Development</h3>
+            <p class="svc-desc">Seasoned engineers embed with your team to deliver features, optimize performance, or tackle tough technical challenges — prototype to ship.</p>
+            <div class="svc-tags"><span>Co-Development</span><span>Porting</span><span>Optimization</span><span>Technical Art</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--platforms" id="platforms" data-index="03">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-num">03</span>
+          <h2 class="section-title">
+            <span class="reveal-line"><span>Every Device,</span></span>
+            <span class="reveal-line"><span class="accent">One Stack</span></span>
+          </h2>
+        </div>
+        <div class="plat-flow">
+          <div class="plat-node" data-parallax="0.05">
+            <div class="plat-orb plat-orb--cyan"></div>
+            <svg class="plat-icon" viewBox="0 0 56 56" fill="none"><rect x="12" y="16" width="32" height="24" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="28" cy="28" r="5" stroke="currentColor" stroke-width="1.2"/><circle cx="28" cy="28" r="1.5" fill="currentColor"/><line x1="18" y1="16" x2="18" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="28" y1="16" x2="28" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="38" y1="16" x2="38" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="18" y1="40" x2="18" y2="46" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="28" y1="40" x2="28" y2="46" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="38" y1="40" x2="38" y2="46" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <h4>Embedded</h4>
+            <span class="plat-sub">SoCs · MCUs · FPGA</span>
+          </div>
+          <div class="plat-connector"><div class="plat-connector-line"></div><div class="plat-connector-dot"></div></div>
+          <div class="plat-node" data-parallax="0.1">
+            <div class="plat-orb plat-orb--purple"></div>
+            <svg class="plat-icon" viewBox="0 0 56 56" fill="none"><rect x="8" y="10" width="40" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/><line x1="8" y1="32" x2="48" y2="32" stroke="currentColor" stroke-width="1.2"/><circle cx="44" cy="35" r="1.5" fill="currentColor"/><line x1="22" y1="38" x2="22" y2="44" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="34" y1="38" x2="34" y2="44" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="18" y1="44" x2="38" y2="44" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <h4>Server &amp; Desktop</h4>
+            <span class="plat-sub">x86 · CUDA · Cloud</span>
+          </div>
+          <div class="plat-connector"><div class="plat-connector-line"></div><div class="plat-connector-dot"></div></div>
+          <div class="plat-node" data-parallax="0.15">
+            <div class="plat-orb plat-orb--mixed"></div>
+            <svg class="plat-icon" viewBox="0 0 56 56" fill="none"><rect x="6" y="16" width="44" height="24" rx="12" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="28" r="4" stroke="currentColor" stroke-width="1.2"/><line x1="18" y1="24" x2="18" y2="32" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><line x1="14" y1="28" x2="22" y2="28" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><circle cx="36" cy="26" r="2" fill="currentColor" opacity=".6"/><circle cx="42" cy="28" r="2" fill="currentColor" opacity=".6"/><circle cx="36" cy="30" r="2" fill="currentColor" opacity=".4"/><circle cx="39" cy="24" r="2" fill="currentColor" opacity=".4"/></svg>
+            <h4>Consoles</h4>
+            <span class="plat-sub">GNM · GDK · NVN</span>
+          </div>
+        </div>
+        <p class="plat-tagline reveal-text" data-delay="0.4">
+          <span class="reveal-line"><span>One codebase · All platforms · Zero compromise</span></span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--experience" id="experience" data-index="04">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-num">04</span>
+          <h2 class="section-title">
+            <span class="reveal-line"><span>Engine</span></span>
+            <span class="reveal-line"><span>Experience</span></span>
+          </h2>
+        </div>
+        <div class="exp-showcase">
+          <div class="exp-item" data-engine="unreal">
+            <div class="exp-item-bg"></div>
+            <span class="exp-item-num">01</span>
+            <h3 class="exp-item-title">Unreal Engine</h3>
+            <p class="exp-item-desc">UE5 rendering pipelines, Nanite, Lumen, Niagara, custom shaders &amp; plugin development.</p>
+            <div class="exp-item-tags"><span>UE5</span><span>Nanite</span><span>Lumen</span><span>C++</span></div>
+            <div class="exp-item-bar"><div class="exp-item-fill" style="--fill:95%"></div></div>
+          </div>
+          <div class="exp-item" data-engine="unity">
+            <div class="exp-item-bg"></div>
+            <span class="exp-item-num">02</span>
+            <h3 class="exp-item-title">Unity Engine</h3>
+            <p class="exp-item-desc">SRP, HDRP &amp; URP pipelines, DOTS/ECS, native plugins, cross-platform shipping.</p>
+            <div class="exp-item-tags"><span>HDRP</span><span>URP</span><span>DOTS</span><span>C#</span></div>
+            <div class="exp-item-bar"><div class="exp-item-fill" style="--fill:90%"></div></div>
+          </div>
+          <div class="exp-item" data-engine="inhouse">
+            <div class="exp-item-bg"></div>
+            <span class="exp-item-num">03</span>
+            <h3 class="exp-item-title">In-House Engines</h3>
+            <p class="exp-item-desc">Custom engines on low-stack architectures. Vulkan, D3D12, Metal — zero unnecessary abstraction.</p>
+            <div class="exp-item-tags"><span>Vulkan</span><span>D3D12</span><span>Metal</span><span>C/C++</span></div>
+            <div class="exp-item-bar"><div class="exp-item-fill" style="--fill:100%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--about" id="about" data-index="05">
+      <div class="section-inner">
+        <div class="about-layout">
+          <div class="about-left">
+            <span class="section-num">05</span>
+            <h2 class="section-title">
+              <span class="reveal-line"><span>About</span></span>
+              <span class="reveal-line"><span>gfxdevdot</span></span>
+            </h2>
+          </div>
+          <div class="about-right">
+            <p class="about-body reveal-text">
+              <span class="reveal-line"><span>We are graphics engineers and engine architects</span></span>
+              <span class="reveal-line"><span>focused on hardware-access computer graphics</span></span>
+              <span class="reveal-line"><span>with low-stack enablement.</span></span>
+            </p>
+            <p class="about-body reveal-text" data-delay="0.3">
+              <span class="reveal-line"><span>From embedded silicon to gaming consoles,</span></span>
+              <span class="reveal-line"><span>we deliver technology that performs — on every</span></span>
+              <span class="reveal-line"><span>device, closer to the metal, closer to the deadline.</span></span>
+            </p>
+            <div class="about-stats">
+              <div class="about-stat">
+                <span class="about-stat-val">10+</span>
+                <span class="about-stat-label">Years R&amp;D</span>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-val">Low</span>
+                <span class="about-stat-label">Stack, High Perf</span>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-val">HW</span>
+                <span class="about-stat-label">Access First</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact" data-index="06">
+      <div class="section-inner">
+        <div class="contact-layout">
+          <div class="contact-left">
+            <span class="section-num">06</span>
+            <h2 class="section-title">
+              <span class="reveal-line"><span>Let's</span></span>
+              <span class="reveal-line"><span>Talk</span></span>
+            </h2>
+            <p class="contact-sub reveal-text" data-delay="0.3">
+              <span class="reveal-line"><span>Have a project in mind?</span></span>
+              <span class="reveal-line"><span>Drop us a line.</span></span>
+            </p>
+          </div>
+          <div class="contact-right">
+            <div class="ct-info">
+              <a href="mailto:info@gfxdev.org" class="ct-email-link">info@gfxdev.org</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>&copy; 2026 gfxdevdot</span>
+        <span class="footer-sep">·</span>
+        <span>Hardware-Access Graphics</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="js/intro.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
