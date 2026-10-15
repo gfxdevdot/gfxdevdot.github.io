@@ -1,5 +1,6 @@
 import * as THREE from './vendor/three.module.js';
 import { OBJLoader } from './vendor/OBJLoader.js';
+import { configureScene, createLogoMaterials } from './scene-style.js';
 
 const canvas = document.getElementById('introCanvas');
 const section = document.getElementById('introSection');
@@ -13,12 +14,9 @@ const ramp = (value, start, end) => THREE.MathUtils.smoothstep(value, start, end
 
 async function start() {
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
-  renderer.setClearColor(0x050508);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.75));
-  renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.3;
   const scene = new THREE.Scene();
-  scene.fog = new THREE.FogExp2(0x050508, 0.028);
+  configureScene(renderer, scene);
   const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100);
   const logo = await new OBJLoader().loadAsync('assets/logo.obj');
   const bounds = new THREE.Box3().setFromObject(logo);
@@ -31,11 +29,7 @@ async function start() {
   core.add(logo);
   scene.add(core);
 
-  const metal = new THREE.MeshStandardMaterial({
-    color: 0x647377, metalness: 0.7, roughness: 0.32,
-    transparent: true, side: THREE.DoubleSide,
-  });
-  const edgeMaterial = new THREE.LineBasicMaterial({ color: 0x9fe5de, transparent: true, opacity: 0.28 });
+  const { metal, edges: edgeMaterial } = createLogoMaterials();
   const surface = [];
   logo.updateMatrixWorld(true);
   logo.traverse(child => {
@@ -50,13 +44,6 @@ async function start() {
     }
   });
   if (!surface.length) throw new Error('Logo OBJ has no mesh vertices');
-  scene.add(new THREE.HemisphereLight(0xadcfcf, 0x121318, 1.4));
-  const key = new THREE.DirectionalLight(0xd4eee9, 4);
-  key.position.set(-3, 4, 5);
-  scene.add(key);
-  const rim = new THREE.PointLight(0xf0b76b, 28, 20);
-  rim.position.set(3, 1, -2);
-  scene.add(rim);
 
   const count = 14000;
   const origin = new Float32Array(count * 3);
@@ -161,7 +148,7 @@ async function start() {
   }
   const routeGeometry = new THREE.BufferGeometry();
   routeGeometry.setAttribute('position', new THREE.Float32BufferAttribute(routes, 3));
-  const routeMaterial = new THREE.LineBasicMaterial({ color: 0x347978, transparent: true, opacity: 0, depthWrite: false });
+  const routeMaterial = new THREE.LineBasicMaterial({ color: 0x346a97, transparent: true, opacity: 0, depthWrite: false });
   scene.add(new THREE.LineSegments(routeGeometry, routeMaterial));
 
   let target = 0;

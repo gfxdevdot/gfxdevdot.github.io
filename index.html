@@ -5,6 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>gfxdev.org | Graphics Engineering &amp; AI Workflows</title>
   <meta name="description" content="Hardware-close graphics engineering and AI-assisted workflows. Rendering R&amp;D, engine technology, reverse engineering, backports, and pipeline QA built around your existing tools." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.gfxdev.org/" />
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="Site guide for language models" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="gfxdev.org" />
+  <meta property="og:title" content="gfxdev.org | Graphics Engineering &amp; AI Workflows" />
+  <meta property="og:description" content="Hardware-close graphics engineering and self-hostable AI workflows that help understaffed teams identify issues earlier." />
+  <meta property="og:url" content="https://www.gfxdev.org/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="gfxdev.org | Graphics Engineering &amp; AI Workflows" />
+  <meta name="twitter:description" content="Hardware-close graphics engineering and self-hostable AI workflows that help understaffed teams identify issues earlier." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.gfxdev.org/#organization",
+        "name": "gfxdev.org",
+        "url": "https://www.gfxdev.org/",
+        "email": "info@gfxdev.org",
+        "description": "Hardware-close graphics engineering and self-hostable AI workflows to help teams make limited specialist expertise go further and identify issues earlier.",
+        "knowsAbout": ["Computer graphics", "Rendering research", "Graphics engines", "Graphics software modernization", "Graphics pipeline quality assurance", "Self-hosted AI workflows"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.gfxdev.org/#website",
+        "url": "https://www.gfxdev.org/",
+        "name": "gfxdev.org",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://www.gfxdev.org/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.gfxdev.org/#webpage",
+        "url": "https://www.gfxdev.org/",
+        "name": "gfxdev.org | Graphics Engineering & AI Workflows",
+        "description": "Graphics engineering services, stack coverage, and self-hostable AI workflows for investigation, modernization, and validation. Demo planned for Q1 2027.",
+        "inLanguage": "en",
+        "isPartOf": { "@id": "https://www.gfxdev.org/#website" },
+        "about": { "@id": "https://www.gfxdev.org/#organization" }
+      }
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
 </head>
@@ -28,7 +73,7 @@
   <canvas id="bgCanvas"></canvas>
 
   <nav class="nav" id="nav">
-    <a href="#" class="nav-logo">gfx<span>dev</span>.</a>
+    <a href="#" class="nav-logo">gfx<span>dev</span>.org</a>
     <div class="nav-index" id="navIndex">
       <span class="nav-index-current" id="navCurrent">01</span>
       <span class="nav-index-sep">/</span>
@@ -116,14 +161,13 @@
           <span class="reveal-line"><span>gfxdev.org / Graphics Engineering</span></span>
         </p>
         <h1 class="hero-title">
-          <span class="reveal-line" data-delay="0.2"><span>Closer to the</span></span>
-          <span class="reveal-line" data-delay="0.35"><span class="accent">metal</span><span>,</span></span>
-          <span class="reveal-line" data-delay="0.5"><span>closer to the pixel.</span></span>
+          <span class="reveal-line" data-delay="0.2"><span>Bring graphics</span></span>
+          <span class="reveal-line" data-delay="0.35"><span class="accent">software forward.</span></span>
         </h1>
         <p class="hero-sub reveal-text" data-delay="0.8">
-          <span class="reveal-line"><span>We build and adapt graphics technology,</span></span>
-          <span class="reveal-line"><span>with AI-assisted workflows grounded in your tools</span></span>
-          <span class="reveal-line"><span>and verified on your target hardware.</span></span>
+          <span class="reveal-line"><span>Self-hostable AI workflows that connect your engineering tools,</span></span>
+          <span class="reveal-line"><span>preserve the evidence, and help your team modernize</span></span>
+          <span class="reveal-line"><span>the graphics stack.</span></span>
         </p>
         <div class="hero-cta reveal-fade" data-delay="1.1">
           <a href="#services" class="btn-circle">
@@ -181,7 +225,7 @@
             <span class="reveal-line"><span>One Application.</span></span>
             <span class="reveal-line"><span class="accent">The Whole Stack.</span></span>
           </h2>
-          <p class="section-sub">Our AI tooling supports graphics work at each layer, from investigating legacy code to validating frame output. Each workflow connects a defined task to evidence your team can review.</p>
+          <p class="section-sub">Graphics expertise is hard to staff across every layer. Our AI tooling helps understaffed teams identify issues earlier by connecting code, captures, and hardware measurements to evidence engineers can review.</p>
         </div>
         <div class="stack-workbench" id="stackWorkbench">
           <div class="workflow-modes" role="group" aria-label="AI workflow coverage">
@@ -219,6 +263,19 @@
           </div>
           <div class="stack-context"><p><strong>Engine context</strong> Unreal Engine / Unity / in-house engines</p><p><strong>Deployment targets</strong> Embedded / server / desktop / consoles</p></div>
         </div>
+        <div class="industry-map" aria-labelledby="industryTitle">
+          <h3 id="industryTitle">Where the workflow fits</h3>
+          <p class="section-sub">For teams maintaining complex graphics software, our product connects existing engineering tools to AI-assisted investigation and validation. These use cases show where it can help, rather than measured customer outcomes.</p>
+          <p class="industry-product">YOUR CODE &amp; TOOLS <span aria-hidden="true">/</span> GFXDEV AI WORKFLOWS <span aria-hidden="true">/</span> ENGINEER-REVIEWED RESULTS</p>
+          <div class="industry-columns" aria-hidden="true"><span>Industry / team</span><span>Project challenge</span><span>Product fit</span><span>Practical benefit</span></div>
+          <ul class="industry-lanes">
+            <li><div><span class="industry-caption">Industry / team</span><h4>Game development</h4></div><div><span class="industry-caption">Project challenge</span><p>Investigate rendering regressions across engine branches and platforms.</p></div><div><span class="industry-caption">Product fit</span><a href="#stackWorkbench" data-use-workflow="trace">Stack traceability</a></div><div><span class="industry-caption">Practical benefit</span><p>Keep code references, captures, and GPU measurements together during debugging and handoff.</p></div></li>
+            <li><div><span class="industry-caption">Industry / team</span><h4>Porting &amp; preservation</h4></div><div><span class="industry-caption">Project challenge</span><p>Recover rendering behavior from authorized legacy game code and binaries.</p></div><div><span class="industry-caption">Product fit</span><a href="#stackWorkbench" data-use-workflow="patterns">Engine-pattern analysis</a></div><div><span class="industry-caption">Practical benefit</span><p>Document candidate engine structures and reconstruction decisions for engineers to verify.</p></div></li>
+            <li><div><span class="industry-caption">Industry / team</span><h4>Simulation &amp; visualization</h4></div><div><span class="industry-caption">Project challenge</span><p>Maintain rendering consistency and performance across software updates.</p></div><div><span class="industry-caption">Product fit</span><a href="#stackWorkbench" data-use-workflow="qa">Pipeline QA automation</a></div><div><span class="industry-caption">Practical benefit</span><p>Make image comparisons and performance checks repeatable, with artifacts attached to failures.</p></div></li>
+            <li><div><span class="industry-caption">Industry / team</span><h4>Embedded &amp; device graphics</h4></div><div><span class="industry-caption">Project challenge</span><p>Adapt a renderer to older branches, limited APIs, or constrained hardware.</p></div><div><span class="industry-caption">Product fit</span><a href="#stackWorkbench" data-use-workflow="backport">Backport assistance</a></div><div><span class="industry-caption">Practical benefit</span><p>Expose compatibility gaps and dependencies before reviewing changes and testing on the device.</p></div></li>
+          </ul>
+          <p class="industry-note">Self-hosted execution keeps the workflow on your infrastructure. Agent permissions and approval gates apply across these use cases.</p>
+        </div>
       </div>
     </section>
 
@@ -231,8 +288,9 @@
             <span class="reveal-line"><span>Connected Workflows.</span></span>
           </h2>
           <p class="section-sub">We build around established tools used daily by open-source communities and commercial teams. Task-specific AI agents connect analysis, implementation, and QA within your existing toolchain.</p>
+          <p class="section-sub">Grounded in published research, tool documentation, and your authorized codebase, with integrations across open-source and commercial toolchains.</p>
           <p class="section-sub"><strong>Fully self-hostable</strong> on your own infrastructure, with no dependency on cloud agent services.</p>
-          <p class="section-sub">Our production workflow carries evidence from the first investigation through to release review, with clear checks at each step.</p>
+          <p class="section-sub">Automated checks surface potential issues early. Evidence-linked investigations help teams share specialist knowledge and reduce repeated analysis, while engineers retain control of changes and release decisions.</p>
         </div>
         <ol class="workflow-gates">
           <li><span>01 / UNDERSTAND</span><h3>Define the investigation.</h3><p>Agree on the subsystem, authorized inputs, agent tool access, and acceptance criteria. Establish the code and runtime evidence needed to proceed.</p></li>
@@ -240,6 +298,34 @@
           <li><span>03 / VALIDATE</span><h3>Check the result.</h3><p>Build, replay, compare images, and measure performance on target hardware. Return QA failures to the investigation with the relevant evidence attached.</p></li>
           <li><span>04 / HANDOFF</span><h3>Deliver with evidence.</h3><p>Hand over engineer-reviewed changes with regression results and known limitations, so your team can make an informed release decision.</p></li>
         </ol>
+        <section class="workflow-example" aria-labelledby="exampleTitle">
+          <p class="example-label">WORKFLOW SKETCH</p>
+          <h3 id="exampleTitle">Great games shouldn't be left behind by changing hardware.</h3>
+          <p class="section-sub">Bring an older game to current hardware: understand the original, establish compatibility, then explore enhancements that preserve its visual identity.</p>
+          <label class="sketch-motion"><input type="checkbox" id="sketchPause" /> Pause illustrations</label>
+          <ol class="example-steps">
+            <li>
+              <figure class="sketch-visual"><canvas data-sketch="capture" role="img" aria-label="Legacy game code, graphics calls, and assets mapped to a modern build, graphics backend, and content pipeline."></canvas><figcaption>01 / RECOVER / MAP THE ORIGINAL GAME TO A MODERN TARGET</figcaption></figure>
+              <div class="example-action"><span class="example-label">01 / RECOVER</span><h4>Understand what the original depends on</h4><p>Start with authorized source or binaries, assets, documentation, and reference captures. Agents would help identify engine patterns, platform assumptions, and rendering behavior; engineers verify reconstructed interfaces where source is unavailable.</p></div>
+              <details class="example-artifact"><summary class="example-label">EXPECTED EVIDENCE / LEGACY SYSTEM MAP</summary><dl><dt>Inputs</dt><dd>Authorized game materials, tool output, reference scenes, and target requirements.</dd><dt>Trace</dt><dd>Game code, graphics calls, asset formats, and timing assumptions.</dd><dt>Baseline</dt><dd>Document original behavior and unknowns before changing it.</dd></dl></details>
+            </li>
+            <li>
+              <figure class="sketch-visual"><canvas data-sketch="trace" role="img" aria-label="Original game behavior feeds platform adaptation and renderer adaptation paths, which converge on a playable compatibility baseline."></canvas><figcaption>02 / PORT / ESTABLISH COMPATIBILITY BEFORE ENHANCEMENTS</figcaption></figure>
+              <div class="example-action"><span class="example-label">02 / PORT</span><h4>Build a playable compatibility baseline</h4><p>Agents would help map legacy graphics calls to a modern backend, adapt shader and asset interfaces, and trace platform dependencies. Engineers review changes to input, memory, and timing so a rendering upgrade does not silently change gameplay.</p></div>
+              <details class="example-artifact"><summary class="example-label">EXPECTED EVIDENCE / PORTING PLAN</summary><dl><dt>Platform</dt><dd>Build and runtime changes for the selected operating system and hardware.</dd><dt>Renderer</dt><dd>A proposed Vulkan, Direct3D 12, or Metal path with documented compatibility gaps.</dd><dt>Gate</dt><dd>Confirm representative scenes and gameplay against the original baseline.</dd></dl></details>
+            </li>
+            <li>
+              <figure class="sketch-visual"><canvas data-sketch="proposal" role="img" aria-label="Optional resolution, HDR, and frame-pacing proposals with a visual-intent test plan stop at engineer approval before target execution."></canvas><figcaption>03 / EXTEND / OPTIONAL CAPABILITIES BEHIND ENGINEERING APPROVAL</figcaption></figure>
+              <div class="example-action"><span class="example-label">03 / EXTEND</span><h4>Push capabilities beyond the original platform</h4><p>With compatibility established, explore higher-resolution rendering, HDR output, and improved frame pacing where the engine and target allow. Agents would propose scoped changes and tests; engineers decide which upgrades preserve the game's artistic intent and fit the performance budget.</p></div>
+              <details class="example-artifact"><summary class="example-label">EXPECTED EVIDENCE / ENHANCEMENT PROPOSAL</summary><dl><dt>Options</dt><dd>Resolution scaling, an HDR output path, and frame-pacing improvements.</dd><dt>Tradeoffs</dt><dd>Content precision, UI scaling, simulation timing, and GPU cost require separate review.</dd><dt>Guardrail</dt><dd>Approve each change and tool run; retain a compatibility mode for comparison.</dd></dl></details>
+            </li>
+            <li>
+              <figure class="sketch-visual"><canvas data-sketch="validation" role="img" aria-label="Original-behavior checks, enhanced-mode visual review, and target performance measurements feed an engineer release review."></canvas><figcaption>04 / VALIDATE / COMPATIBILITY AND ENHANCEMENTS CHECKED SEPARATELY</figcaption></figure>
+              <div class="example-action"><span class="example-label">04 / VALIDATE</span><h4>Check both the game and the upgrades</h4><p>Approved runs would compare compatibility mode with the original, review enhanced output against agreed visual goals, and measure target performance. QA records distinguish intentional changes from regressions, including gameplay timing and UI behavior.</p></div>
+              <details class="example-artifact"><summary class="example-label">EXPECTED EVIDENCE / MODERNIZATION REVIEW</summary><dl><dt>Evidence</dt><dd>Builds, replay logs, frame comparisons, API validation, and frame-time measurements.</dd><dt>Acceptance</dt><dd>Compatibility checks, approved visual changes, and target budgets reviewed by engineers.</dd></dl></details>
+            </li>
+          </ol>
+        </section>
       </div>
     </section>
 
@@ -256,8 +342,8 @@
           <div class="about-right">
             <p class="about-body reveal-text">
               <span class="reveal-line"><span>We are graphics engineers and engine architects.</span></span>
-              <span class="reveal-line"><span>Our mission is to help teams understand, adapt,</span></span>
-              <span class="reveal-line"><span>and validate the graphics technology they rely on.</span></span>
+              <span class="reveal-line"><span>Our mission is to help teams make limited graphics</span></span>
+              <span class="reveal-line"><span>expertise go further and identify issues earlier.</span></span>
             </p>
             <p class="about-body reveal-text" data-delay="0.3">
               <span class="reveal-line"><span>Hardware knowledge guides the implementation.</span></span>
@@ -322,5 +408,6 @@
   <script type="module" src="js/intro-cinematic.js"></script>
   <script src="js/main.js"></script>
   <script src="js/workflow.js"></script>
+  <script src="js/workflow-sketch.js"></script>
 </body>
 </html>

@@ -21,7 +21,7 @@
       output: 'Candidate render loops, resource lifetimes, shader interfaces, and reconstruction notes linked to binary locations.',
       gate: 'Review pattern matches, rebuild relevant paths, and compare behavior and captured frames.',
       layers: ['application', 'engine', 'shaders', 'api'],
-      color: '#eab976'
+      color: '#efbb7e'
     },
     backport: {
       title: 'LLM-assisted graphics subsystem backports',
@@ -30,7 +30,7 @@
       output: 'Dependency maps, compatibility gaps, proposed patches, and a targeted regression plan.',
       gate: 'Engineers review changes; compilation, image comparisons, and performance tests run on the target.',
       layers: ['engine', 'shaders', 'api'],
-      color: '#91d7ad'
+      color: '#80bdff'
     },
     trace: {
       title: 'Traceability across the graphics stack',
@@ -48,7 +48,7 @@
       output: 'Image-difference reports, shader and API validation results, performance regressions, and linked failure artifacts.',
       gate: 'Investigate failures, approve intentional baseline changes, and retain test results for release review.',
       layers: ['application', 'engine', 'shaders', 'api', 'driver', 'hardware'],
-      color: '#91d7ad'
+      color: '#80bdff'
     },
     execution: {
       title: 'Agentic pipeline execution & guardrails',
@@ -57,7 +57,7 @@
       output: 'Auditable run records with tool calls, artifacts, policy decisions, and checkpoint results.',
       gate: 'Pause on policy violations, failed checks, or budget limits. Require engineer approval for protected changes and release actions.',
       layers: ['application', 'engine', 'shaders', 'api', 'driver', 'hardware'],
-      color: '#eab976'
+      color: '#efbb7e'
     }
   };
 
@@ -81,5 +81,11 @@
   }
 
   buttons.forEach(button => button.addEventListener('click', () => selectWorkflow(button.dataset.workflow)));
+  document.querySelectorAll('[data-use-workflow]').forEach(link => {
+    link.addEventListener('click', () => {
+      selectWorkflow(link.dataset.useWorkflow);
+      buttons.find(button => button.dataset.workflow === link.dataset.useWorkflow)?.focus({ preventScroll: true });
+    });
+  });
   selectWorkflow('analysis');
 }());

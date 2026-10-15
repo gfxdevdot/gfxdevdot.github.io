@@ -1,0 +1,18 @@
+# gfxdev.org
+
+> Hardware-close graphics engineering and self-hostable AI workflows that help teams make limited specialist expertise go further and identify issues earlier.
+
+gfxdev.org covers rendering research, engine technology, authorized reverse engineering, graphics backports, stack traceability, and pipeline QA. Workflows connect existing open-source and commercial tools to evidence engineers can review. Engineers retain control of protected actions and release decisions. Workflows are fully self-hostable without cloud agent services.
+
+The demo is planned for Q1 2027. Contact: info@gfxdev.org.
+
+## Main Pages
+
+- [Graphics engineering and AI workflows](https://www.gfxdev.org/): Services, stack coverage, engineering workflow, and contact information.
+- [Product story](https://www.gfxdev.org/pitch/): Mission, specialist capacity constraints, the product, and a game modernization journey.
+
+## Detailed Topics
+
+- [Graphics stack coverage](https://www.gfxdev.org/#platforms): Investigation, engine patterns, backports, traceability, QA, and agentic execution with guardrails.
+- [Engineering workflow](https://www.gfxdev.org/#experience): Existing toolchain integration, self-hosting, research grounding, and engineering review.
+- [Game modernization](https://www.gfxdev.org/pitch/#journey): Recover original behavior, port to a modern platform, explore enhancements, and validate against agreed requirements.
