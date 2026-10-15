@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>gfxdev(dot)org — Hardware-Access Graphics</title>
-  <meta name="description" content="gfxdev(dot)org — hardware-access computer graphics with low-stack enablement. Real-time graphics research, in-house game engine licensing, and external development." />
+  <title>gfxdev.org | Graphics Engineering &amp; AI Workflows</title>
+  <meta name="description" content="Hardware-close graphics engineering and AI-assisted workflows. Rendering R&amp;D, engine technology, reverse engineering, backports, and pipeline QA built around your existing tools." />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
 </head>
@@ -44,13 +44,13 @@
       <ul class="menu-links">
         <li><a href="#hero" data-index="01">Home</a></li>
         <li><a href="#services" data-index="02">Services</a></li>
-        <li><a href="#platforms" data-index="03">Platforms</a></li>
-        <li><a href="#experience" data-index="04">Experience</a></li>
+        <li><a href="#platforms" data-index="03">Graphics Stack</a></li>
+        <li><a href="#experience" data-index="04">Our Workflow</a></li>
         <li><a href="#about" data-index="05">About</a></li>
         <li><a href="#contact" data-index="06">Contact</a></li>
       </ul>
       <div class="menu-footer">
-        <a href="mailto:info@gfxdev.org">info@gfxdev(dot)org</a>
+        <a href="mailto:info@gfxdev.org">info@gfxdev.org</a>
       </div>
     </div>
   </div>
@@ -60,6 +60,30 @@
   <section class="intro" id="introSection">
     <canvas id="introCanvas"></canvas>
     <div class="intro-overlay">
+      <div class="intro-story" id="introStory">
+        <p class="intro-story-brand">gfxdev.org / Graphics Engineering</p>
+        <div class="intro-chapters">
+          <article class="intro-chapter is-active" data-chapter="0">
+            <p class="intro-chapter-index">01 / UNDERSTAND</p>
+            <h2>Know what drives the frame.</h2>
+            <p>We connect application behavior to the renderer and GPU, with AI-assisted analysis grounded in code and captures.</p>
+            <p class="intro-chapter-detail">Reverse engineering / Stack traceability</p>
+          </article>
+          <article class="intro-chapter" data-chapter="1" aria-hidden="true" inert>
+            <p class="intro-chapter-index">02 / BUILD</p>
+            <h2>Make the stack work for you.</h2>
+            <p>Rendering research, engine development, and graphics backports supported by AI workflows built around existing tools.</p>
+            <p class="intro-chapter-detail">Rendering R&amp;D / Engine technology / Backports</p>
+          </article>
+          <article class="intro-chapter" data-chapter="2" aria-hidden="true" inert>
+            <p class="intro-chapter-index">03 / VALIDATE</p>
+            <h2>Prove it on the hardware.</h2>
+            <p>Reviewable changes, repeatable graphics QA, and performance measurements on the devices you need to support.</p>
+            <p class="intro-chapter-detail">Pipeline QA / Target testing / Engineering review</p>
+          </article>
+        </div>
+        <div class="intro-chapter-track" aria-hidden="true"><span></span></div>
+      </div>
       <div class="intro-scroll-prompt" id="introScrollPrompt">
         <span>Scroll to explore</span>
         <div class="intro-scroll-arrow">
@@ -72,14 +96,14 @@
   <section class="intro-band" id="introBand">
     <div class="intro-band-inner">
       <div class="intro-band-left">
-        <h1 class="intro-label intro-title" data-order="1">HARDWARE</h1>
-        <h1 class="intro-label intro-title" data-order="2">ACCESS</h1>
-        <h1 class="intro-label intro-title" data-order="3">GRAPHICS</h1>
+        <p class="intro-label intro-title" data-order="1">HARDWARE</p>
+        <p class="intro-label intro-title" data-order="2">ACCESS</p>
+        <p class="intro-label intro-title" data-order="3">GRAPHICS</p>
       </div>
       <div class="intro-band-right">
         <p class="intro-label intro-meta" data-order="4">FOUNDED IN 2026</p>
-        <p class="intro-label intro-desc" data-order="5">WE BLEND LOW-STACK ENGINEERING &amp; REAL-TIME<br>GRAPHICS AS AN IN-HOUSE TEAM OF PASSIONATE MAKERS</p>
-        <p class="intro-label intro-desc" data-order="6">OUR HARDWARE-CLOSE TOOLSET<br>CONSISTENTLY DELIVERS HIGH-PERFORMANCE<br>WORK THROUGH QUALITY &amp; OPTIMIZATION</p>
+        <p class="intro-label intro-desc" data-order="5">GRAPHICS ENGINEERING FROM APPLICATION CODE TO GPU EXECUTION.</p>
+        <p class="intro-label intro-desc" data-order="6">AI-ASSISTED WORKFLOWS BUILT ON ESTABLISHED TOOLS, WITH RESULTS VERIFIED ON TARGET HARDWARE.</p>
       </div>
     </div>
   </section>
@@ -89,7 +113,7 @@
     <section class="section section--hero" id="hero" data-index="01">
       <div class="section-inner">
         <p class="hero-label reveal-text" data-delay="0.6">
-          <span class="reveal-line"><span>Hardware-Access Graphics</span></span>
+          <span class="reveal-line"><span>gfxdev.org / Graphics Engineering</span></span>
         </p>
         <h1 class="hero-title">
           <span class="reveal-line" data-delay="0.2"><span>Closer to the</span></span>
@@ -97,12 +121,13 @@
           <span class="reveal-line" data-delay="0.5"><span>closer to the pixel.</span></span>
         </h1>
         <p class="hero-sub reveal-text" data-delay="0.8">
-          <span class="reveal-line"><span>Low-stack enablement — from embedded hardware</span></span>
-          <span class="reveal-line"><span>through server &amp; desktop to gaming consoles.</span></span>
+          <span class="reveal-line"><span>We build and adapt graphics technology,</span></span>
+          <span class="reveal-line"><span>with AI-assisted workflows grounded in your tools</span></span>
+          <span class="reveal-line"><span>and verified on your target hardware.</span></span>
         </p>
         <div class="hero-cta reveal-fade" data-delay="1.1">
           <a href="#services" class="btn-circle">
-            <span>Explore</span>
+            <span>Our Work</span>
             <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -118,31 +143,31 @@
         <div class="section-header">
           <span class="section-num">02</span>
           <h2 class="section-title">
-            <span class="reveal-line"><span>What We Do</span></span>
+            <span class="reveal-line"><span>Graphics Engineering</span></span>
           </h2>
           <p class="section-sub reveal-text">
-            <span class="reveal-line"><span>Three pillars of expertise, one mission —</span></span>
-            <span class="reveal-line"><span>hardware-close, low-stack graphics that ship.</span></span>
+            <span class="reveal-line"><span>Rendering research, engine technology, and hands-on development.</span></span>
+            <span class="reveal-line"><span>AI tooling supports the work across all three.</span></span>
           </p>
         </div>
         <div class="services-row">
           <article class="svc" data-parallax="0.08">
             <span class="svc-index">01</span>
-            <h3 class="svc-title">Real-Time Graphics Research</h3>
-            <p class="svc-desc">GPU-driven pipelines, low-level APIs, physically-based shading, and global illumination — cutting-edge R&amp;D turned into production-ready, low-stack solutions.</p>
+            <h3 class="svc-title">Rendering Research</h3>
+            <p class="svc-desc">Develop rendering techniques, shaders, and GPU compute pipelines. Connect research to engine implementation and evaluate visual quality and performance on target hardware.</p>
             <div class="svc-tags"><span>Rendering R&amp;D</span><span>Low-Level APIs</span><span>GPU Compute</span><span>Hardware Access</span></div>
           </article>
           <article class="svc" data-parallax="0.12">
             <span class="svc-index">02</span>
-            <h3 class="svc-title">In-House Engine Licensing</h3>
-            <p class="svc-desc">A proprietary engine built on a low-stack architecture that talks directly to the hardware. Minimal abstraction, maximum performance, full source access.</p>
-            <div class="svc-tags"><span>Engine Licensing</span><span>Low-Stack</span><span>Cross-Platform</span><span>Source Access</span></div>
+            <h3 class="svc-title">Engine Technology</h3>
+            <p class="svc-desc">License our in-house engine with source access, or work with us on your existing renderer. Adapt graphics subsystems to platform requirements and hardware constraints.</p>
+            <div class="svc-tags"><span>Engine Licensing</span><span>Renderer Development</span><span>Backports</span><span>Source Access</span></div>
           </article>
           <article class="svc" data-parallax="0.16">
             <span class="svc-index">03</span>
-            <h3 class="svc-title">External Development</h3>
-            <p class="svc-desc">Seasoned engineers embed with your team to deliver features, optimize performance, or tackle tough technical challenges — prototype to ship.</p>
-            <div class="svc-tags"><span>Co-Development</span><span>Porting</span><span>Optimization</span><span>Technical Art</span></div>
+            <h3 class="svc-title">Engineering &amp; Tooling</h3>
+            <p class="svc-desc">Work alongside your team on porting, optimization, and graphics investigation. Build AI agent workflows and QA automation around the tools your engineers already use.</p>
+            <div class="svc-tags"><span>Co-Development</span><span>Porting</span><span>AI Workflows</span><span>Pipeline QA</span></div>
           </article>
         </div>
       </div>
@@ -153,35 +178,47 @@
         <div class="section-header">
           <span class="section-num">03</span>
           <h2 class="section-title">
-            <span class="reveal-line"><span>Every Device,</span></span>
-            <span class="reveal-line"><span class="accent">One Stack</span></span>
+            <span class="reveal-line"><span>One Application.</span></span>
+            <span class="reveal-line"><span class="accent">The Whole Stack.</span></span>
           </h2>
+          <p class="section-sub">Our AI tooling supports graphics work at each layer, from investigating legacy code to validating frame output. Each workflow connects a defined task to evidence your team can review.</p>
         </div>
-        <div class="plat-flow">
-          <div class="plat-node" data-parallax="0.05">
-            <div class="plat-orb plat-orb--cyan"></div>
-            <svg class="plat-icon" viewBox="0 0 56 56" fill="none"><rect x="12" y="16" width="32" height="24" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="28" cy="28" r="5" stroke="currentColor" stroke-width="1.2"/><circle cx="28" cy="28" r="1.5" fill="currentColor"/><line x1="18" y1="16" x2="18" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="28" y1="16" x2="28" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="38" y1="16" x2="38" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="18" y1="40" x2="18" y2="46" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="28" y1="40" x2="28" y2="46" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="38" y1="40" x2="38" y2="46" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-            <h4>Embedded</h4>
-            <span class="plat-sub">SoCs · MCUs · FPGA</span>
+        <div class="stack-workbench" id="stackWorkbench">
+          <div class="workflow-modes" role="group" aria-label="AI workflow coverage">
+            <button type="button" data-workflow="analysis" aria-pressed="true">01 / Reverse engineering</button>
+            <button type="button" data-workflow="patterns" aria-pressed="false">02 / Engine patterns</button>
+            <button type="button" data-workflow="backport" aria-pressed="false">03 / Backport assistance</button>
+            <button type="button" data-workflow="trace" aria-pressed="false">04 / Stack traceability</button>
+            <button type="button" data-workflow="qa" aria-pressed="false">05 / Pipeline QA</button>
+            <button type="button" data-workflow="execution" aria-pressed="false">06 / Agentic execution &amp; guardrails</button>
           </div>
-          <div class="plat-connector"><div class="plat-connector-line"></div><div class="plat-connector-dot"></div></div>
-          <div class="plat-node" data-parallax="0.1">
-            <div class="plat-orb plat-orb--purple"></div>
-            <svg class="plat-icon" viewBox="0 0 56 56" fill="none"><rect x="8" y="10" width="40" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/><line x1="8" y1="32" x2="48" y2="32" stroke="currentColor" stroke-width="1.2"/><circle cx="44" cy="35" r="1.5" fill="currentColor"/><line x1="22" y1="38" x2="22" y2="44" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="34" y1="38" x2="34" y2="44" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="18" y1="44" x2="38" y2="44" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-            <h4>Server &amp; Desktop</h4>
-            <span class="plat-sub">x86 · CUDA · Cloud</span>
+          <div class="stack-layout">
+            <div class="stack-graph" role="group" aria-label="Graphics application flow and AI workflow coverage">
+              <p class="stack-label">GRAPHICS APPLICATION FLOW <span>CPU TO GPU</span></p>
+              <ol class="stack-layers">
+                <li data-layer="application" class="is-covered"><span class="stack-order">01</span><div><h3>Application &amp; assets</h3><p>Game logic / scenes / content</p></div><span class="stack-coverage">AI coverage</span></li>
+                <li data-layer="engine" class="is-covered"><span class="stack-order">02</span><div><h3>Engine &amp; renderer</h3><p>Unreal / Unity / custom engines</p></div><span class="stack-coverage">AI coverage</span></li>
+                <li data-layer="shaders" class="is-covered"><span class="stack-order">03</span><div><h3>Shaders &amp; render graph</h3><p>Passes / resources / GPU programs</p></div><span class="stack-coverage">AI coverage</span></li>
+                <li data-layer="api"><span class="stack-order">04</span><div><h3>Graphics API</h3><p>Vulkan / Direct3D 12 / Metal</p></div><span class="stack-coverage">Context</span></li>
+                <li data-layer="driver"><span class="stack-order">05</span><div><h3>Driver &amp; runtime</h3><p>Submission / synchronization / memory</p></div><span class="stack-coverage">Context</span></li>
+                <li data-layer="hardware"><span class="stack-order">06</span><div><h3>GPU &amp; frame output</h3><p>Embedded / desktop / server / consoles</p></div><span class="stack-coverage">Context</span></li>
+              </ol>
+              <p class="stack-feedback">Frame captures &amp; measurements feed back into engineering</p>
+            </div>
+            <aside class="workflow-detail" aria-live="polite" aria-atomic="true">
+              <p class="stack-label">GFXDEV.ORG / AI-ASSISTED ENGINEERING</p>
+              <h3 id="workflowTitle">Reverse-engineering agent setup</h3>
+              <p id="workflowSummary">Task-specific agents connect source, binaries, symbols, and captures to build an evidence-linked picture of an unfamiliar graphics application.</p>
+              <dl>
+                <dt>Inputs</dt><dd id="workflowInputs">Authorized code or binaries, symbols, engine documentation, frame captures.</dd>
+                <dt>Reviewable output</dt><dd id="workflowOutput">Subsystem maps, annotated findings, and reproducible analysis tasks with source references.</dd>
+                <dt>Validation gate</dt><dd id="workflowGate">Engineers verify inferred behavior against code and runtime evidence.</dd>
+              </dl>
+              <p class="workflow-boundary">Coverage shows where the workflow gathers evidence or assists engineering. Release decisions stay with your team, supported by review and target-hardware tests.</p>
+            </aside>
           </div>
-          <div class="plat-connector"><div class="plat-connector-line"></div><div class="plat-connector-dot"></div></div>
-          <div class="plat-node" data-parallax="0.15">
-            <div class="plat-orb plat-orb--mixed"></div>
-            <svg class="plat-icon" viewBox="0 0 56 56" fill="none"><rect x="6" y="16" width="44" height="24" rx="12" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="28" r="4" stroke="currentColor" stroke-width="1.2"/><line x1="18" y1="24" x2="18" y2="32" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><line x1="14" y1="28" x2="22" y2="28" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><circle cx="36" cy="26" r="2" fill="currentColor" opacity=".6"/><circle cx="42" cy="28" r="2" fill="currentColor" opacity=".6"/><circle cx="36" cy="30" r="2" fill="currentColor" opacity=".4"/><circle cx="39" cy="24" r="2" fill="currentColor" opacity=".4"/></svg>
-            <h4>Consoles</h4>
-            <span class="plat-sub">GNM · GDK · NVN</span>
-          </div>
+          <div class="stack-context"><p><strong>Engine context</strong> Unreal Engine / Unity / in-house engines</p><p><strong>Deployment targets</strong> Embedded / server / desktop / consoles</p></div>
         </div>
-        <p class="plat-tagline reveal-text" data-delay="0.4">
-          <span class="reveal-line"><span>One codebase · All platforms · Zero compromise</span></span>
-        </p>
       </div>
     </section>
 
@@ -190,36 +227,19 @@
         <div class="section-header">
           <span class="section-num">04</span>
           <h2 class="section-title">
-            <span class="reveal-line"><span>Engine</span></span>
-            <span class="reveal-line"><span>Experience</span></span>
+            <span class="reveal-line"><span>Your Tools.</span></span>
+            <span class="reveal-line"><span>Connected Workflows.</span></span>
           </h2>
+          <p class="section-sub">We build around established tools used daily by open-source communities and commercial teams. Task-specific AI agents connect analysis, implementation, and QA within your existing toolchain.</p>
+          <p class="section-sub"><strong>Fully self-hostable</strong> on your own infrastructure, with no dependency on cloud agent services.</p>
+          <p class="section-sub">Our production workflow carries evidence from the first investigation through to release review, with clear checks at each step.</p>
         </div>
-        <div class="exp-showcase">
-          <div class="exp-item" data-engine="unreal">
-            <div class="exp-item-bg"></div>
-            <span class="exp-item-num">01</span>
-            <h3 class="exp-item-title">Unreal Engine</h3>
-            <p class="exp-item-desc">UE5 rendering pipelines, Nanite, Lumen, Niagara, custom shaders &amp; plugin development.</p>
-            <div class="exp-item-tags"><span>UE5</span><span>Nanite</span><span>Lumen</span><span>C++</span></div>
-            <div class="exp-item-bar"><div class="exp-item-fill" style="--fill:95%"></div></div>
-          </div>
-          <div class="exp-item" data-engine="unity">
-            <div class="exp-item-bg"></div>
-            <span class="exp-item-num">02</span>
-            <h3 class="exp-item-title">Unity Engine</h3>
-            <p class="exp-item-desc">SRP, HDRP &amp; URP pipelines, DOTS/ECS, native plugins, cross-platform shipping.</p>
-            <div class="exp-item-tags"><span>HDRP</span><span>URP</span><span>DOTS</span><span>C#</span></div>
-            <div class="exp-item-bar"><div class="exp-item-fill" style="--fill:90%"></div></div>
-          </div>
-          <div class="exp-item" data-engine="inhouse">
-            <div class="exp-item-bg"></div>
-            <span class="exp-item-num">03</span>
-            <h3 class="exp-item-title">In-House Engines</h3>
-            <p class="exp-item-desc">Custom engines on low-stack architectures. Vulkan, D3D12, Metal — zero unnecessary abstraction.</p>
-            <div class="exp-item-tags"><span>Vulkan</span><span>D3D12</span><span>Metal</span><span>C/C++</span></div>
-            <div class="exp-item-bar"><div class="exp-item-fill" style="--fill:100%"></div></div>
-          </div>
-        </div>
+        <ol class="workflow-gates">
+          <li><span>01 / UNDERSTAND</span><h3>Define the investigation.</h3><p>Agree on the subsystem, authorized inputs, agent tool access, and acceptance criteria. Establish the code and runtime evidence needed to proceed.</p></li>
+          <li><span>02 / BUILD</span><h3>Make reviewable changes.</h3><p>Connect analysis and proposed changes to source locations, binary evidence, API events, and frame captures. Record uncertainty for engineering review.</p></li>
+          <li><span>03 / VALIDATE</span><h3>Check the result.</h3><p>Build, replay, compare images, and measure performance on target hardware. Return QA failures to the investigation with the relevant evidence attached.</p></li>
+          <li><span>04 / HANDOFF</span><h3>Deliver with evidence.</h3><p>Hand over engineer-reviewed changes with regression results and known limitations, so your team can make an informed release decision.</p></li>
+        </ol>
       </div>
     </section>
 
@@ -229,33 +249,33 @@
           <div class="about-left">
             <span class="section-num">05</span>
             <h2 class="section-title">
-              <span class="reveal-line"><span>About</span></span>
-              <span class="reveal-line"><span>gfxdevdot</span></span>
+              <span class="reveal-line"><span>Hardware-Close.</span></span>
+              <span class="reveal-line"><span>Engineer-Led.</span></span>
             </h2>
           </div>
           <div class="about-right">
             <p class="about-body reveal-text">
-              <span class="reveal-line"><span>We are graphics engineers and engine architects</span></span>
-              <span class="reveal-line"><span>focused on hardware-access computer graphics</span></span>
-              <span class="reveal-line"><span>with low-stack enablement.</span></span>
+              <span class="reveal-line"><span>We are graphics engineers and engine architects.</span></span>
+              <span class="reveal-line"><span>Our mission is to help teams understand, adapt,</span></span>
+              <span class="reveal-line"><span>and validate the graphics technology they rely on.</span></span>
             </p>
             <p class="about-body reveal-text" data-delay="0.3">
-              <span class="reveal-line"><span>From embedded silicon to gaming consoles,</span></span>
-              <span class="reveal-line"><span>we deliver technology that performs — on every</span></span>
-              <span class="reveal-line"><span>device, closer to the metal, closer to the deadline.</span></span>
+              <span class="reveal-line"><span>Hardware knowledge guides the implementation.</span></span>
+              <span class="reveal-line"><span>AI workflows extend the tools teams already use.</span></span>
+              <span class="reveal-line"><span>Code review and measurements establish the result.</span></span>
             </p>
             <div class="about-stats">
               <div class="about-stat">
-                <span class="about-stat-val">10+</span>
-                <span class="about-stat-label">Years R&amp;D</span>
+                <span class="about-stat-val">GPU</span>
+                <span class="about-stat-label">Hardware-Close Engineering</span>
               </div>
               <div class="about-stat">
-                <span class="about-stat-val">Low</span>
-                <span class="about-stat-label">Stack, High Perf</span>
+                <span class="about-stat-val">AI</span>
+                <span class="about-stat-label">Toolchain Integration</span>
               </div>
               <div class="about-stat">
-                <span class="about-stat-val">HW</span>
-                <span class="about-stat-label">Access First</span>
+                <span class="about-stat-val">QA</span>
+                <span class="about-stat-label">Evidence-Based Validation</span>
               </div>
             </div>
           </div>
@@ -273,8 +293,8 @@
               <span class="reveal-line"><span>Talk</span></span>
             </h2>
             <p class="contact-sub reveal-text" data-delay="0.3">
-              <span class="reveal-line"><span>Have a project in mind?</span></span>
-              <span class="reveal-line"><span>Drop us a line.</span></span>
+              <span class="reveal-line"><span>Tell us about your renderer, target hardware,</span></span>
+              <span class="reveal-line"><span>or the workflow your team needs to improve.</span></span>
             </p>
           </div>
           <div class="contact-right">
@@ -291,12 +311,16 @@
         <span>&copy; 2026 gfxdevdot</span>
         <span class="footer-sep">·</span>
         <span>Hardware-Access Graphics</span>
+        <span class="demo-launch">Launching Demo 2027 - Q1
+          <a class="demo-adopter" href="mailto:info@gfxdev.org?subject=Early%20adopter%20interest">Be among our first adopters</a>
+        </span>
       </div>
     </footer>
 
   </main>
 
-  <script src="js/intro.js"></script>
+  <script type="module" src="js/intro-cinematic.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/workflow.js"></script>
 </body>
 </html>
